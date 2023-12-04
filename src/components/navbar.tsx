@@ -30,7 +30,7 @@ export default function Navbar() {
     ]
 
     return(
-        <div className="flex justify-between items-center w-full h-20 px-4 fixed bg-bege-300 font-bold text-zinc-900 ">
+        <div className="flex justify-between items-center w-full h-20 px-4 fixed bg-bege-300 font-bold text-wine-700 ">
             <div>
                 <h1 className="text-5xl ml-2">Meu portfolio</h1>
             </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                         {links.map(({ id, link}) => (
                             <li
                                 key={id}
-                                className="capitalize px-4 py-6 cursor-pointer text-4xl"
+                                className="capitalize px-4 py-6 cursor-pointer text-4xl text-wine-700"
                             >
                                 {link}
                             </li>
