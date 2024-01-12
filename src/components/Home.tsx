@@ -5,7 +5,7 @@ export default function Home() {
     return(
         <div
             name='home'
-            className='h-screen w-full bg-gradient-to-b from-bege-300 via-bege-300 to-bege-100'    
+            className='h-screen w-full bg-gradient-to-b from-primary-300 via-primary-300 to-primary-100'    
         >
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row '>
                 <div>

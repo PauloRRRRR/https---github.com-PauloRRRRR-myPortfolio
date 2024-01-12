@@ -4,24 +4,43 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        sans: 'Roboto, sans-serif'
+        sans: 'Roboto, sans-serif',
+        pacifico: ['Pacifico', 'cursive'],
       },
       backgroundImage:{
         app: 'url(/app-bg.png)'
       },
       colors: {
-        bege:{
-          100: '#FEFFEB',
-          200: '#D1CAA1',
-          300: '#b39d69',
-      },
-        orangeBrown:{
-        100: '#a86b4c'
-      },
-        wine:{
-        500: '#7d1a0c',
-        700: '#340a0b'
-      },
+        primary: {
+          100: '#1abc9c',
+          200: '#16a085',
+          300: '#138d75',
+          400: '#117a65',
+          500: '#0e6655',
+        },
+        secondary: {
+          100: '#e74c3c',
+          200: '#c0392b',
+          300: '#922b21',
+          400: '#7b241c',
+          500: '#641e16',
+        },
+        accent1: {
+          100: '#3498db',
+          200: '#2980b9',
+          300: '#1f618d',
+          400: '#154360',
+          500: '#0e4a31',
+        },
+        accent2: {
+          100: '#f39c12',
+          200: '#d4ac0d',
+          300: '#b7950b',
+          400: '#9a7d0a',
+          500: '#7d6608',
+        },
+        background: '#ecf0f1',
+        text: '#34495e',
     },
     },
   },
