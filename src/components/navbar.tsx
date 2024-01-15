@@ -40,11 +40,11 @@ export default function Navbar() {
           ))}
         </ul>
         {isNavOpen && (
-          <ul className="flex flex-col justify-center items-center absolute top-20 left-8 bg-gradient-to-b bg-primary-200 rounded-lg items-center">
+          <ul className="flex flex-col justify-center items-center absolute top-20 left-8 bg-primary-200 rounded-lg items-center">
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="capitalize px-4 py-6 cursor-pointer text-4xl text-wine-700"
+                className="capitalize px-1 py-1 cursor-pointer text-4xl text-wine-700 m-4"
                 onClick={() => {
                   setNavOpen(false); // Fechar o menu ao clicar em uma seção
                   // Adicionar lógica adicional conforme necessário ao clicar em uma seção
