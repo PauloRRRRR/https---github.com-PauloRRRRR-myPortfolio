@@ -40,7 +40,7 @@ export default function Navbar() {
           ))}
         </ul>
         {isNavOpen && (
-          <ul className="flex flex-col justify-center items-center absolute top-20 left-8 bg-primary-300 rounded-lg items-center">
+          <ul className="flex flex-col items-center bg-primary-300 h-full left-0 top-0 fixed">
             {links.map(({ id, link }) => (
               <li
                 key={id}

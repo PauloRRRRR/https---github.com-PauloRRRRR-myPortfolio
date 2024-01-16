@@ -3,7 +3,7 @@ import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRound
 
 export default function Home() {
     return (
-        <div className='h-screen w-full bg-gradient-to-b '>
+        <div className='h-screen w-full bg-gradient-to-b p-4 m-10 '>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='md:flex md:flex-col md:items-center md:mb-4'>
                     <div className='text-center'>
