@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nunito", "sans-serif";
+    color: #ffffff
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+};
+
+@layer components {
+  .menu-item{
+    @apply text-xs md:text-sm font-normal text-white relative cursor-pointer;
+  };
+  .menu-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #0F9DF8; /* Substitua pela sua cor primária */
+    border-radius: 0.25rem; /* Substitua pelo valor do raio desejado */
+    transform: translateX(-11px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .primary-btn {
+    @apply h-9 md:h-11 bg-primary text-white text-sm px-6 rounded border border-primary
+  }
+
+  .primary-btn:hover {
+    background-color: transparent;
+    color: #0F9DF8;
+  }
+
+  .hero-img {
+    @apply w-[120px] h-[120px] md:w-[139px] md:h-[139px] bg-gray-800 rounded-full
+  }
+
+  .ui-circle{
+    @apply w-[130px] h-[130px] md:w-[180px] md:h-[180px] origin-top-left rotate-[-36.39deg] rounded-[117px] border-b-2 border-sky-500 ;
+  };
+
+}
